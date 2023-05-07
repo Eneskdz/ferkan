@@ -1,7 +1,7 @@
 {
   "name": "TV Archief",
   "short_name": "TV Archief",
-  "start_url": ".",
+  "start_url": "/tv",
   "display": "standalone",
   "background_color": "#fff",
   "description": "Kijk, Herbekijk en download.",
