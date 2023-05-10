@@ -2,14 +2,31 @@
 <html lang="en">
 <head>
 	<meta name="generator" content="Hugo 0.104.3" /><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-	<title>ferkan</title>
+	<title>Pixel Art Website</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
 	<meta charset="utf-8">
+	<style>
+		/* Define the size of each pixel on the canvas */
+		.pixel {
+			width: 10px;
+			height: 10px;
+			border: 1px solid black;
+			float: left;
+		}
+	</style>
 </head>
 <body>
 
-<img src="img/quinten.jpg">
+	<!-- Create a canvas by using a series of div elements with the class "pixel" -->
+	<div class="canvas">
+		<div class="pixel"></div>
+		<div class="pixel"></div>
+		<div class="pixel"></div>
+		<!-- Repeat the div elements as needed to create your desired canvas size and design -->
+	</div>
+
 	<p>Quinten Van Damme</p>
-	</body>
+</body>
 </html>
+
