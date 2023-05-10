@@ -14,19 +14,30 @@
 			border: 1px solid black;
 			float: left;
 		}
+
+		/* Set the height of the HTML and body elements to 100% and remove any margins or padding */
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* Create a canvas that covers the entire webpage */
+		.canvas {
+			height: 100%;
+		}
 	</style>
 </head>
 <body>
 
-	<!-- Create a canvas by using a series of div elements with the class "pixel" -->
+	<!-- Create a canvas that covers the entire webpage by using a series of div elements with the class "pixel" -->
 	<div class="canvas">
-		<div class="pixel"></div>
-		<div class="pixel"></div>
-		<div class="pixel"></div>
 		<!-- Repeat the div elements as needed to create your desired canvas size and design -->
+		<div class="pixel"></div>
+		<div class="pixel"></div>
+		<div class="pixel"></div>
 	</div>
 
 	<p>Quinten Van Damme</p>
 </body>
 </html>
-
