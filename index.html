@@ -25,6 +25,14 @@
 		/* Create a canvas that covers the entire webpage */
 		.canvas {
 			height: 100%;
+			width: 100%;
+		}
+
+		/* Use the viewport width to calculate the number of pixels to display horizontally */
+		@media (min-width: 600px) {
+			.canvas {
+				width: calc(100vw - 20px);
+			}
 		}
 	</style>
 </head>
@@ -33,12 +41,18 @@
 	<!-- Create a canvas that covers the entire webpage by using a series of div elements with the class "pixel" -->
 	<div class="canvas">
 		<!-- Repeat the div elements as needed to create your desired canvas size and design -->
-		<div class="pixel"></div>
-		<div class="pixel"></div>
-		<div class="pixel"></div>
+		<script>
+			// Use JavaScript to dynamically create pixels based on the size of the canvas
+			var canvas = document.querySelector('.canvas');
+			for (var i = 0; i < canvas.offsetHeight / 10; i++) {
+				for (var j = 0; j < canvas.offsetWidth / 10; j++) {
+					var pixel = document.createElement('div');
+					pixel.classList.add('pixel');
+					canvas.appendChild(pixel);
+				}
+			}
+		</script>
 	</div>
-	
 
-	<p>Quinten Van Damme</p>
 </body>
 </html>
